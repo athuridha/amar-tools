@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+
+    // Reference/inspiration code (not part of production app):
+    "inspo/**",
   ]),
 ]);
 
