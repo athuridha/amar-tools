@@ -54,6 +54,22 @@ const categories = [
       { title: "IBAN Validator", description: "Validate international bank account numbers with MOD-97 check.", href: "/tools/iban-validator", span: "col-span-1" },
     ],
   },
+  {
+    name: "API Tools",
+    tag: "API",
+    tools: [
+      { title: "Currency Converter", description: "Real-time exchange rates from ECB. Convert between 30+ currencies.", href: "/tools/currency-converter", span: "col-span-1 sm:col-span-2" },
+      { title: "Math Solver", description: "Simplify, derive, integrate, factor expressions instantly.", href: "/tools/math-solver", span: "col-span-1 sm:col-span-2" },
+      { title: "IP Lookup", description: "Geolocation, ISP, timezone, and more from any IP address.", href: "/tools/ip-lookup", span: "col-span-1" },
+      { title: "URL Shortener", description: "Shorten long URLs instantly. No sign-up required.", href: "/tools/url-shortener", span: "col-span-1" },
+      { title: "Email Validator", description: "Check email format, disposable status, and DNS records.", href: "/tools/email-validator", span: "col-span-1" },
+      { title: "Random Quote", description: "Get inspired with random quotes from famous people.", href: "/tools/random-quote", span: "col-span-1" },
+      { title: "Country Info", description: "Search any country — population, flag, currency, and more.", href: "/tools/country-info", span: "col-span-1 sm:col-span-2" },
+      { title: "Number Facts", description: "Discover interesting trivia and math facts about any number.", href: "/tools/number-facts", span: "col-span-1" },
+      { title: "Dictionary", description: "Look up English word definitions, phonetics, and synonyms.", href: "/tools/dictionary", span: "col-span-1" },
+      { title: "Trivia Quiz", description: "Test your knowledge with random trivia questions.", href: "/tools/trivia-quiz", span: "col-span-1" },
+    ],
+  },
 ];
 
 let globalIndex = 0;
