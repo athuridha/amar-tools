@@ -67,6 +67,7 @@ const categories = [
       { title: "Country Info", description: "Search any country — population, flag, currency, and more.", href: "/tools/country-info", span: "col-span-1 sm:col-span-2" },
       { title: "Number Facts", description: "Discover interesting trivia and math facts about any number.", href: "/tools/number-facts", span: "col-span-1" },
       { title: "Dictionary", description: "Look up English word definitions, phonetics, and synonyms.", href: "/tools/dictionary", span: "col-span-1" },
+      { title: "KBBI", description: "Cari arti kata Bahasa Indonesia lewat KBBI online.", href: "https://kbbi.athuridha.my.id/", span: "col-span-1" },
       { title: "Trivia Quiz", description: "Test your knowledge with random trivia questions.", href: "/tools/trivia-quiz", span: "col-span-1" },
     ],
   },

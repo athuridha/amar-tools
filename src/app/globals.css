@@ -337,122 +337,57 @@ input[type="range"]::-webkit-slider-thumb {
   color: var(--accent);
 }
 
-/* ═══════════ Regex Tester ═══════════ */
-.regex-match {
-  background: rgba(159, 95, 255, 0.25);
-  color: var(--accent);
-  padding: 1px 2px;
-  border-bottom: 2px solid var(--accent);
-}
-
-/* ═══════════ Markdown Preview ═══════════ */
-.markdown-preview {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  line-height: 1.7;
+/* ═══════════ PDF tool previews ═══════════ */
+.docx-preview {
   color: var(--foreground);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-.markdown-preview .md-h1 {
-  font-size: 1.8em;
+.docx-preview :where(h1, h2, h3, h4) {
   font-weight: 900;
-  margin: 1em 0 0.5em;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.3em;
+  line-height: 1.2;
+  margin: 0.75em 0 0.35em;
 }
 
-.markdown-preview .md-h2 {
-  font-size: 1.4em;
-  font-weight: 800;
-  margin: 1em 0 0.4em;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.2em;
-}
-
-.markdown-preview .md-h3 {
-  font-size: 1.2em;
-  font-weight: 700;
-  margin: 0.8em 0 0.3em;
-}
-
-.markdown-preview .md-h4,
-.markdown-preview .md-h5,
-.markdown-preview .md-h6 {
-  font-size: 1em;
-  font-weight: 700;
-  margin: 0.6em 0 0.2em;
-  color: var(--muted-foreground);
-}
-
-.markdown-preview .md-p {
+.docx-preview :where(p) {
   margin: 0.5em 0;
 }
 
-.markdown-preview strong {
-  font-weight: 700;
-  color: var(--foreground);
-}
-
-.markdown-preview em {
-  font-style: italic;
-}
-
-.markdown-preview del {
-  text-decoration: line-through;
-  opacity: 0.6;
-}
-
-.markdown-preview .md-link {
+.docx-preview :where(a) {
   color: var(--accent);
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
-.markdown-preview .md-blockquote {
-  border-left: 3px solid var(--accent);
-  padding: 0.5em 1em;
+.docx-preview :where(ul, ol) {
+  padding-left: 1.25em;
   margin: 0.5em 0;
-  color: var(--muted-foreground);
 }
 
-.markdown-preview .md-code-block {
-  background: rgba(0, 0, 0, 0.3);
+.docx-preview :where(table) {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75em 0;
+}
+
+.docx-preview :where(th, td) {
   border: 1px solid var(--border);
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow-x: auto;
-  font-size: 12px;
+  padding: 6px 8px;
+  vertical-align: top;
 }
 
-.markdown-preview .md-inline-code {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 2px 6px;
+.docx-preview :where(img) {
+  max-width: 100%;
+  height: auto;
   border: 1px solid var(--border);
-  font-size: 0.9em;
 }
 
-.markdown-preview .md-ul,
-.markdown-preview .md-ol {
-  padding-left: 1.5em;
-  margin: 0.5em 0;
+.pdf-table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.markdown-preview .md-li {
-  list-style: disc;
-  margin: 0.2em 0;
-}
-
-.markdown-preview .md-oli {
-  list-style: decimal;
-  margin: 0.2em 0;
-}
-
-.markdown-preview .md-hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 1em 0;
-}
-
-.markdown-preview input[type="checkbox"] {
-  margin-right: 0.5em;
-  accent-color: var(--accent);
+.pdf-table td {
+  word-break: break-word;
 }
